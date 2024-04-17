@@ -1,9 +1,18 @@
+'use client';
 import React from "react";
+import Cookies from "js-cookie";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from 'next/navigation'
 import styles from "./SidebarLayout.module.css";
 
 const SidebarLayout = () => {
+    const router = useRouter();
+    const handleLogout = () => {
+        Cookies.set("loggedin", "false");
+        router.push("/");
+        window.location.reload();
+    }
     return (
         <div className={styles.container}>
 
@@ -95,6 +104,15 @@ const SidebarLayout = () => {
                                     alt="Logo"
                                     width={48}
                                     height={32}
+                                /></Link>
+                            </li>
+                            <li onClick={handleLogout}>
+                                <Link href="/" onClick={handleLogout}> <Image
+                                    src="/assets/icons/logout.png"
+                                    alt="Logo"
+                                    width={32}
+                                    height={32}
+                                    onClick={handleLogout}
                                 /></Link>
                             </li>
                         </ul>

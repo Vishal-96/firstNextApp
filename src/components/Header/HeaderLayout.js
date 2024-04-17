@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.logo}>
-                <h1>Project Name</h1>
+                <h1 className='text-black font-bold'>Project Name</h1>
                 <Image src="/assets/icons/CaretDown.png" alt="Project Logo" width={20} height={20} />
             </div>
             <div className={styles.center}>

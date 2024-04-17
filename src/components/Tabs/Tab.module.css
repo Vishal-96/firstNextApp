@@ -1,0 +1,26 @@
+/* customTable.css */
+
+.excellentMark {
+  background-color: #0CC96E;
+  color: #ffff;
+}
+
+.inputCheckbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.searchInput{
+  color: black;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid #6E6E78;
+}
+
+.headerRow th{
+  font-size: 12px;
+  color: #6E6E78;
+  font-weight: 400;
+  font-family: 'Satoshi-Regular'!important;
+}

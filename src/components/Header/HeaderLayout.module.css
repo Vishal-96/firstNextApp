@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    margin-top: 2%;
 }
 
 .logo {
@@ -31,7 +32,11 @@
 .dashboard {
     background-color: #4C7EFF;
     padding: 10px 30px 10px 30px;
+    border-width: 1px;
+    border-color: #EEEEEE;
     border-radius: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 4px;
 }
 
 .dashboard:hover {
@@ -40,12 +45,14 @@
 }
 
 .submission {
-    margin: -15px;
+    margin-left: -20px;
     padding: 10px 30px 10px 25px;
     border: solid;
-    border-left: none;
     border-radius: 10px;
     border-width: 1px;
-    border-color: #6E6E78;
+    border-color: #EEEEEE;
+    border-left: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
     color: #6E6E78;
 }
